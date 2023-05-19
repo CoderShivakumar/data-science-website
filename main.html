@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>5 newer data science tools you should be using with Python</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<h1><b>5 newer data science tools you should be using with Python</h1></b>
+		<h2>
+		Already using NumPy, Pandas, and scikit-learn? Here are five more powerful Python data science tools ready for a place in your toolkit.
+		</h2>
+		<div class="section-1">
+			
+			
+			<img src="img.webp" class="mic">
+		</div>
+		<div class="section-2">
+			<p class="page-sec">Python's rich ecosystem of data science tools is a big draw for users. The only downside of such a broad and deep collection is that sometimes the best tools can get overlooked.
+			Here's a rundown of some of the best newer or lesser-known data science projects available for Python. Some, like Polars, are getting more attention than before but still deserve wider notice; others, like ConnectorX, are hidden gems.
+			<br>Table Of Contents</br>
+		</p>
+
+			<ul class="obj-list">
+				<li>ConnectorX</li>
+				<li>DuckDB</li>
+				<li>Optimus</li>
+			</ul>
+		</div>
+		<div class="section-3">
+			<p class="sect">
+				<b>ConnectorX</b>
+					Most data sits in a database somewhere, but computation typically happens outside of a database. Getting data to and from the database for actual work can be a slowdown. ConnectorX loads data from databases into many common data-wrangling tools in Python, and it keeps things fast by minimizing the amount of work to be done.
+				[ Tune into Dev with Serdar to get Go and Python coding tips in 5 minutes or less ]
+
+				Like Polars (which I'll discuss soon), ConnectorX uses a Rust library at its core. This allows for optimizations like being able to load from a data source in parallel with partitioning. Data in PostgreSQL, for instance, can be loaded this way by specifying a partition column.
+				Aside from PostgreSQL, ConnectorX also supports reading from MySQL/MariaDB, SQLite, Amazon Redshift, Microsoft SQL Server and Azure SQL, and Oracle. The results can be funneled into a Pandas or PyArrow DataFrame, or into Modin, Dask, or Polars by way of PyArrow<br></br>
+				<b>DuckDB</b>
+
+				Data science folks who use Python ought to be aware of SQLite—a small, but powerful and speedy, relational database packaged with Python. Since it runs as an in-process library, rather than a separate application, it's lightweight and responsive.
+
+				DuckDB is a little like someone answered the question, "What if we made SQLite for OLAP?" Like other OLAP database engines, it uses a columnar datastore and is optimized for long-running analytical query workloads. But it gives you all the things you expect from a conventional database, like ACID transactions. And there's no separate software suite to configure; you can get it running in a Python environment with a single pip install command.<br></br>
+				<b>Optimus</b>
+
+				One of the least enviable jobs you can be stuck with is cleaning and preparing data for use in a DataFrame-centric project. Optimus is an all-in-one toolset for loading, exploring, cleansing, and writing data back out to a variety of data sources.
+
+				Optimus can use Pandas, Dask, CUDF (and Dask + CUDF), Vaex, or Spark as its underlying data engine. Data can be loaded in from and saved back out to Arrow, Parquet, Excel, a variety of common database sources, or flat-file formats like CSV and JSON.
+
+				The data manipulation API resembles Pandas, but adds .rows() and .cols() accessors to make it easy to do things like sort a dataframe, filter by column values, alter data according to criteria, or narrow the range of operations based on some criteria. Optimus also comes bundled with processors for handling common real-world data types like email addresses and URLs
+
+			</p>
+			<img src="fb-social.png" alt="social-media.png" class="fb-soci">
+
+		</div>
+	</body>
+</html>
